@@ -14,6 +14,15 @@ import life from './Life.png';
 import video from './video.mp4';
 import work from './work.jpg';
 import saving from './saving.webp';
+import ItTalent from './ItTalent.mp4';
+import hp from './hp.png';
+import Canadian from './Canadian.png';
+import Citibank from './Citibank.png';
+import Desjardins from './Desjardins.png';
+import Coreio from './Coreio.gif';
+import bank from './bank.png';
+import honda from './honda.png';
+import officeboy from './officeboy.jpg';
 
 export const assets = {
   automitive,
@@ -31,5 +40,14 @@ export const assets = {
   life,
   video,
   work,
-  saving, // Add this line
+  saving,
+  ItTalent,
+  honda,
+   hp,
+   Canadian,
+   Citibank,
+   Desjardins,
+   Coreio,
+   bank,
+   officeboy
 };

@@ -1,0 +1,154 @@
+.hire-form-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.hire-form-banner {
+  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hire-form-banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hire-form-banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hire-form-container {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(214, 0, 28, 0.13);
+  padding: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hire-form-container:hover {
+  transform: translateY(-5px);
+}
+
+.hire-form-container h2 {
+  color: #d6001c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.hire-form-container p {
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.hire-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 12px 0;
+  border: 2px solid #edf2f7;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.hire-form input:focus {
+  border-color: #d6001c;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(214, 0, 28, 0.1);
+}
+
+.hire-form button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+}
+
+.hire-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(214, 0, 28, 0.2);
+}
+
+.hire-success {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 24px;
+  color: #059669;
+  background: #ecfdf5;
+  padding: 12px;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hire-form-banner h1 {
+    font-size: 2rem;
+  }
+
+  .hire-form-banner p {
+    font-size: 1rem;
+  }
+
+  .hire-form-container {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .hire-form input,
+  .hire-form button {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hire-form-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .hire-form-container {
+    margin: 1rem auto;
+    padding: 1.25rem;
+    max-width: 95%;
+  }
+
+  .hire-form input,
+  .hire-form button {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+}

@@ -4,23 +4,34 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm';
+import HireForm from './pages/HireForm/HireForm';
+import ItTalent from './pages/ItTalent/ItTalent';
 
 function App() {
-  const [showContact, setShowContact] = useState(false);
+  const [currentSection, setCurrentSection] = useState('home');
 
   const handleNavClick = (section) => {
-    if (section === 'contact') {
-      setShowContact(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      setShowContact(false);
+    setCurrentSection(section);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const renderSection = () => {
+    switch (currentSection) {
+      case 'contact':
+        return <ContactForm />;
+      case 'jobSearch':
+        return <HireForm />;
+      case 'itTalent':
+        return <ItTalent />;
+      default:
+        return <Home />;
     }
   };
 
   return (
     <>
       <Navbar onNavClick={handleNavClick} />
-      {showContact ? <ContactForm /> : <Home />}
+      {renderSection()}
       <Footer />
     </>
   );
