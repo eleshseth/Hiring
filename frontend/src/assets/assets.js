@@ -23,6 +23,17 @@ import Coreio from './Coreio.gif';
 import bank from './bank.png';
 import honda from './honda.png';
 import officeboy from './officeboy.jpg';
+import helpyou from "./helpyou.avif"
+import team from './team.png';
+import directhire from './Directhire.mp4';
+import network from './network.avif';
+import global from "./global.mp4";
+import itconsultant from './itconsultant.mp4'
+import itco1 from './itco1.png';
+import itco2 from './itco2.png';
+import itco3 from './itco3.png';
+import contactpayrole from './Contactpayrole.mp4';
+
 
 export const assets = {
   automitive,
@@ -49,5 +60,15 @@ export const assets = {
    Desjardins,
    Coreio,
    bank,
-   officeboy
+   officeboy,
+   helpyou,
+   team,
+   directhire,
+   network,
+   global,
+    itconsultant,
+  itco1,
+  itco2,
+  itco3,
+  contactpayrole
 };

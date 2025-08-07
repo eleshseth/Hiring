@@ -181,14 +181,28 @@
     padding: 20px;
     gap: 10px;
     transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 50;
   }
 
   .navlinks.active {
     left: 0;
   }
 
+  /* Ensure smooth transition when closing menu after clicking */
+  .navlinks.closing {
+    left: -100%;
+  }
+
   .nav-item {
     width: 100%;
+  }
+
+  /* Override desktop positioning for mobile */
+  .nav-title {
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
   }
 
   .dropdown {
@@ -197,23 +211,93 @@
     box-shadow: none;
     background: transparent;
     display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    padding: 0;
+    margin: 0;
   }
 
   .nav-item.active .dropdown {
     display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
   }
 
+  /* Fix submenu display on mobile */
   .dropdown-submenu {
-    position: static;
-    width: 100%;
-    box-shadow: none;
-    padding-left: 20px;
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 0 0 20px !important;
+    background-color: #f5f5f5 !important;
+    border-left: 3px solid #d6001c;
+    animation: none !important;
+    display: block !important;
   }
 
   .dropdown-item {
-    padding: 10px;
+    padding: 12px 15px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .dropdown-subitem {
+    padding: 10px 15px;
+    white-space: normal;
+  }
+
+  /* Ensure mobile submenu display works with hover/click interaction */
+  .nav-item:hover .dropdown {
+    display: none;
+  }
+
+  .nav-item.active:hover .dropdown {
+    display: block;
+  }
+
+  /* Show dropdown arrow change on active state */
+  .nav-item.active .down-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Fix dropdown visibility in mobile view */
+  .dropdown.active {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 100%;
+    background-color: transparent;
+    max-height: none;
+    overflow: visible;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 2px solid #d6001c;
+    padding-left: 10px;
+  }
+
+  /* Fix dropdown items display */
+  .dropdown.active .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+
+  /* Ensure submenu is visible when active */
+  .dropdown-submenu {
+    margin-left: 15px;
+    border-left: 2px solid #d6001c;
+  }
+
+  /* Fix arrow rotation for active items */
+  .nav-item.active .down-arrow {
+    transform: rotate(180deg);
   }
 }

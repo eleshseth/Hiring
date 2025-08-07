@@ -3,6 +3,13 @@ import itTalentVideo from '../../assets/itTalent.mp4';
 import { assets } from '../../assets/assets';
 import './ItTalent.css';
 import Partner from '../../components/Partner/Partner';
+import Engagements from '../../components/Engagements/Engagements';
+import Technology from '../../components/Technology/Technology';
+import HelpYou from '../../components/HelpYou/HelpYou';
+import Global from '../../components/Global/Global';
+import Industry from '../../components/Industry/Industry';
+import HireForm from '../HireForm/HireForm';
+import AboutUs from '../Aboutus/AboutUs';
 
 // AnimatedNumber component from Home.jsx
 const AnimatedNumber = ({ target, start }) => {
@@ -184,6 +191,13 @@ const ItTalent = () => {
         </div>
       </div>
       <Partner/>
+      <Engagements/>
+      <HelpYou/>
+      <Technology/>
+      <Industry/>
+      <Global/>
+      <HireForm/>
+   
     </div>
   );
 };

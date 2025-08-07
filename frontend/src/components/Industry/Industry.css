@@ -1,0 +1,67 @@
+.industry-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.industry-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #d6001c;
+  margin-bottom: 10px;
+}
+
+.industry-subtitle {
+  font-size: 18px;
+  color: #555e75;
+  margin-bottom: 40px;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.industry-card {
+  position: relative;
+  height: 160px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.industry-overlay {
+  background-color: rgba(169, 11, 11, 0.54);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.industry-text {
+  z-index: 2;
+}
+
+/* Example backgrounds for demonstration (replace with real images via CSS classes or inline style) */
+.card-1 { background-image: url('./images/automotive.jpg'); }
+.card-2 { background-image: url('./images/banking.jpg'); }
+.card-3 { background-image: url('./images/energy.jpg'); }
+.card-4 { background-image: url('./images/gaming.jpg'); }
+.card-5 { background-image: url('./images/government.jpg'); }
+.card-6 { background-image: url('./images/healthcare.jpg'); }
+.card-7 { background-image: url('./images/insurance.jpg'); }
+.card-8 { background-image: url('./images/lifesciences.jpg'); }

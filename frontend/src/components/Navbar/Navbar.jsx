@@ -8,12 +8,20 @@ const Navbar = ({ onNavClick }) => {
   const [showBusinessSpecialties, setShowBusinessSpecialties] = useState(false);
   const [showBusinessIndustries, setShowBusinessIndustries] = useState(false);
   const [showBusinessOffices, setShowBusinessOffices] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      if (!mobile) {
         setIsMenuOpen(false);
         setActiveItem(null);
+        // Reset all submenu states when switching to desktop
+        setShowBusinessServices(true);
+        setShowBusinessSpecialties(false);
+        setShowBusinessIndustries(false);
+        setShowBusinessOffices(false);
       }
     };
 
@@ -52,87 +60,317 @@ const Navbar = ({ onNavClick }) => {
             className={`dropdown ${activeItem === 'business' ? 'active' : ''}`}>
             <div
               className='dropdown-item'
-              onMouseEnter={() => setShowBusinessServices(true)}
-              onMouseLeave={() => setShowBusinessServices(false)}
+              onMouseEnter={() => !isMobile && setShowBusinessServices(true)}
+              onMouseLeave={() => !isMobile && setShowBusinessServices(false)}
+              onClick={() =>
+                isMobile && setShowBusinessServices(!showBusinessServices)
+              }
               style={{ position: 'relative' }}>
               Services
               {showBusinessServices && (
                 <div
                   className='dropdown-submenu'
-                  onMouseEnter={() => setShowBusinessServices(true)}
-                  onMouseLeave={() => setShowBusinessServices(false)}>
+                  onMouseEnter={() =>
+                    !isMobile && setShowBusinessServices(true)
+                  }
+                  onMouseLeave={() =>
+                    !isMobile && setShowBusinessServices(false)
+                  }>
                   <div
                     className='dropdown-subitem'
-                    onClick={() => onNavClick && onNavClick('itTalent')}>
+                    onClick={() => {
+                      onNavClick && onNavClick('itTalent');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
                     Contract Staffing
                   </div>
-                  <div className='dropdown-subitem'>Direct Hire</div>
-                  <div className='dropdown-subitem'>
-                    {' '}
-                    <div className='dropdown-subitem'>Global Talent</div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('directhire');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Direct Hire
                   </div>
-                  <div className='dropdown-subitem'>IT Consulting</div>
-                  <div className='dropdown-subitem'>Contractor Payrolling</div>
-                  <div className='dropdown-subitem'>
+
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('globaltalent');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Global Talent
+                  </div>
+
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('itconsultant');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    IT Consulting
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('contactpayrole');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Contractor Payrolling
+                  </div>
+                  {/* <div className='dropdown-subitem'>
                     {' '}
                     <div className='dropdown-subitem'>
                       Contractor Payrolling
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>
             <div
               className='dropdown-item'
-              onMouseEnter={() => setShowBusinessSpecialties(true)}
-              onMouseLeave={() => setShowBusinessSpecialties(false)}
+              onMouseEnter={() => !isMobile && setShowBusinessSpecialties(true)}
+              onMouseLeave={() =>
+                !isMobile && setShowBusinessSpecialties(false)
+              }
+              onClick={() =>
+                isMobile && setShowBusinessSpecialties(!showBusinessSpecialties)
+              }
               style={{ position: 'relative' }}>
               Specialties
               {showBusinessSpecialties && (
                 <div
                   className='dropdown-submenu'
-                  onMouseEnter={() => setShowBusinessSpecialties(true)}
-                  onMouseLeave={() => setShowBusinessSpecialties(false)}>
-                  <div className='dropdown-subitem'>Cloud & DevOps</div>
-                  <div className='dropdown-subitem'>Cybersecurity</div>
-                  <div className='dropdown-subitem'>Data Science</div>
-                  <div className='dropdown-subitem'>Project Management</div>
+                  onMouseEnter={() =>
+                    !isMobile && setShowBusinessSpecialties(true)
+                  }
+                  onMouseLeave={() =>
+                    !isMobile && setShowBusinessSpecialties(false)
+                  }>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('bigdata');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Big Data
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('cybersecurity');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Cybersecurity
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('clouddevops');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Cloud & DevOps
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('dynamics360');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Dynamics 360
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('guidewire');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Guidewire
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('projectmanager');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Project Manager
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('sap');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    SAP
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('salesforce');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Salesforce
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('servicenow');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Service Now
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('banking');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Banking
+                  </div>
                 </div>
               )}
             </div>
             <div
               className='dropdown-item'
-              onMouseEnter={() => setShowBusinessIndustries(true)}
-              onMouseLeave={() => setShowBusinessIndustries(false)}
+              onMouseEnter={() => !isMobile && setShowBusinessIndustries(true)}
+              onMouseLeave={() => !isMobile && setShowBusinessIndustries(false)}
+              onClick={() =>
+                isMobile && setShowBusinessIndustries(!showBusinessIndustries)
+              }
               style={{ position: 'relative' }}>
               Industries
               {showBusinessIndustries && (
                 <div
                   className='dropdown-submenu'
-                  onMouseEnter={() => setShowBusinessIndustries(true)}
-                  onMouseLeave={() => setShowBusinessIndustries(false)}>
-                  <div className='dropdown-subitem'>Banking</div>
-                  <div className='dropdown-subitem'>Healthcare</div>
-                  <div className='dropdown-subitem'>Retail</div>
-                  <div className='dropdown-subitem'>Telecom</div>
+                  onMouseEnter={() =>
+                    !isMobile && setShowBusinessIndustries(true)
+                  }
+                  onMouseLeave={() =>
+                    !isMobile && setShowBusinessIndustries(false)
+                  }>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('automotive');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Automotive
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('banking');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Banking
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('energy');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Energy and Utilities
+                  </div>{' '}
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('gaming');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Gaming
+                  </div>{' '}
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('government');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Government
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('healthcare');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Healthcare
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('insurance');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Insurance
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('lifescience');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Life Science
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('professional');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Professional service
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('retail');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Retail
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('semiconductor');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Semiconductor
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('telecom');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    Telecommunication
+                  </div>
                 </div>
               )}
             </div>
             <div
               className='dropdown-item'
-              onMouseEnter={() => setShowBusinessOffices(true)}
-              onMouseLeave={() => setShowBusinessOffices(false)}
+              onMouseEnter={() => !isMobile && setShowBusinessOffices(true)}
+              onMouseLeave={() => !isMobile && setShowBusinessOffices(false)}
+              onClick={() =>
+                isMobile && setShowBusinessOffices(!showBusinessOffices)
+              }
               style={{ position: 'relative' }}>
               Office Locations
               {showBusinessOffices && (
                 <div
                   className='dropdown-submenu'
-                  onMouseEnter={() => setShowBusinessOffices(true)}
-                  onMouseLeave={() => setShowBusinessOffices(false)}>
-                  <div className='dropdown-subitem'>New York</div>
-                  <div className='dropdown-subitem'>Toronto</div>
-                  <div className='dropdown-subitem'>London</div>
-                  <div className='dropdown-subitem'>Bangalore</div>
+                  onMouseEnter={() => !isMobile && setShowBusinessOffices(true)}
+                  onMouseLeave={() =>
+                    !isMobile && setShowBusinessOffices(false)
+                  }>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('officelocation');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                    USA
+                  </div>
                 </div>
               )}
             </div>
@@ -156,14 +394,17 @@ const Navbar = ({ onNavClick }) => {
             }`}>
             <div
               className='dropdown-item'
-              onClick={() => onNavClick && onNavClick('jobSearch')}
+              onClick={() => {
+                onNavClick && onNavClick('jobSearch');
+                setIsMenuOpen(false); // Close the mobile menu
+              }}
               style={{ cursor: 'pointer' }}>
               Job Search
             </div>
-            <div className='dropdown-item'>Find a job at Procom</div>
+            {/* <div className='dropdown-item'>Find a job at Procom</div> */}
           </div>
         </div>
-        <div className='nav-item'>
+        {/* <div className='nav-item'>
           <div
             className='nav-title'
             onClick={() => {
@@ -180,7 +421,7 @@ const Navbar = ({ onNavClick }) => {
             <div className='dropdown-item'>Case Studies</div>
             <div className='dropdown-item'>Whitepapers</div>
           </div>
-        </div>
+        </div> */}
         <div className='nav-item'>
           <div
             className='nav-title'
@@ -192,10 +433,15 @@ const Navbar = ({ onNavClick }) => {
             ABOUT <span className='down-arrow'>▼</span>
           </div>
           <div className={`dropdown ${activeItem === 'about' ? 'active' : ''}`}>
-            <div className='dropdown-item'>Our Story</div>
-            <div className='dropdown-item'>Leadership Team</div>
-            <div className='dropdown-item'>Company Values</div>
-            <div className='dropdown-item'>Testimonials</div>
+            <div
+              className='dropdown-item'
+              onClick={() => {
+                onNavClick && onNavClick('aboutus');
+                setIsMenuOpen(false); // Close the mobile menu
+              }}
+              style={{ cursor: 'pointer' }}>
+              Who we are
+            </div>
           </div>
         </div>
         <div className='nav-item'>
@@ -212,18 +458,25 @@ const Navbar = ({ onNavClick }) => {
             className={`dropdown ${activeItem === 'contacts' ? 'active' : ''}`}>
             <div
               className='dropdown-item'
-              onClick={() => onNavClick && onNavClick('contact')}
+              onClick={() => {
+                onNavClick && onNavClick('contact');
+                setIsMenuOpen(false); // Close the mobile menu
+              }}
               style={{ cursor: 'pointer' }}>
               Get in Touch
             </div>
-            <div className='dropdown-item'>Office Locations</div>
+            {/* <div className='dropdown-item'>Office Locations</div>
             <div className='dropdown-item'>Support Team</div>
-            <div className='dropdown-item'>Feedback</div>
+            <div className='dropdown-item'>Feedback</div> */}
           </div>
         </div>
       </div>
       <div className='profile'>
-        <button className='signupbutton'>signup</button>
+        <button
+          className='signupbutton'
+          onClick={() => onNavClick && onNavClick('contact')}>
+          Get Hire
+        </button>
       </div>
     </div>
   );

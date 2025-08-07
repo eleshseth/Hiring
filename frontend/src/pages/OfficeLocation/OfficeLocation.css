@@ -1,0 +1,107 @@
+.office-location {
+  background: #f8fafc;
+}
+
+.location-content {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.headquarters {
+  background: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.headquarters h2 {
+  color: #d6001c;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.address {
+  margin-bottom: 2rem;
+}
+
+.address h3 {
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.address p {
+  color: #4a5568;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.office-hours {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.office-hours h3 {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.office-hours p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.map-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.map-section h2 {
+  color: #d6001c;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .location-content {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .headquarters {
+    padding: 2rem 1rem;
+  }
+
+  .headquarters h2 {
+    font-size: 2rem;
+  }
+
+  .address h3 {
+    font-size: 1.5rem;
+  }
+
+  .address p {
+    font-size: 1rem;
+  }
+}

@@ -191,6 +191,7 @@
   }
 }
 
+
 @media screen and (max-width: 1024px) {
   .experience {
     padding: 2rem 1rem;
@@ -242,6 +243,7 @@
   .our-details {
     flex-direction: column;
     gap: 15px;
+  
   }
 }
 
@@ -378,6 +380,7 @@
   .solution-card-title {
     font-size: 1.2rem;
     margin-bottom: 0.7rem;
+    width: 30px;
   }
 
   .solution-card-description {

@@ -1,0 +1,115 @@
+.save {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-color: #f0f0f0;
+}
+.save h1 {
+  font-size: 2rem;
+  color: #d6001c;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+.save p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+  font-family: sans-serif;
+  width: 50%;
+}
+.network {
+  height: 510px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.network h1 {
+  font-size: 2rem;
+  color: #d6001c;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  width: 40%;
+  margin-left: 300px;
+}
+.network p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  font-family: sans-serif;
+  width: 40%;
+  margin-left: 300px;
+}
+.network img {
+  width: 800px;
+  height: 500px;
+  margin-right: 300px;
+}
+
+@media (max-width: 900px) {
+  .save {
+    height: auto;
+    padding: 40px 10px;
+  }
+  .save p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .network {
+    flex-direction: column;
+    height: auto;
+    gap: 24px;
+    padding: 30px 0;
+  }
+  .network h1,
+  .network p {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .network .image,
+  .network img {
+    margin-right: 0;
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .save {
+    padding: 24px 4px;
+    height: auto;
+  }
+  .save h1 {
+    font-size: 1.2rem;
+  }
+  .save p {
+    font-size: 0.95rem;
+    width: 98%;
+  }
+  .network {
+    padding: 10px 0;
+    gap: 16px;
+  }
+  .network h1 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .network p {
+    font-size: 0.95rem;
+  }
+  .network .image,
+  .network img {
+    max-width: 180px;
+    width: 98vw;
+    height: auto;
+  }
+}

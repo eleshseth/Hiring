@@ -1,0 +1,147 @@
+.technology-section {
+  display: flex;
+  padding: 80px;
+background: linear-gradient(to right, #d6001c, #d34040);;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tech-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.tech-left h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left:  200px;
+}
+
+.tech-left p {
+  margin-top: 15px;
+  font-size: 2.1rem;
+  margin-left:  200px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.tech-card {
+  background-color: #920000;
+  border-radius: 10px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon,
+.tech-card img {
+  display: block;
+  margin: 0 auto 12px auto;
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.tech-label {
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  min-width: 0;
+  margin-bottom: 8px;
+}
+
+.tech-card p {
+  font-size: 0.9rem;
+  color: #d1e7f0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  min-width: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+  .technology-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: flex-start;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .technology-section {
+    flex-direction: column;
+    padding: 30px 10px;
+    align-items: flex-start;
+  }
+  .tech-left h2 {
+    font-size: 2rem;
+  }
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    width: 100%;
+    justify-content: stretch;
+  }
+  .tech-card {
+    padding: 18px 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .technology-section {
+    padding: 14px 2px;
+  }
+  .tech-left h2 {
+    font-size: 1.2rem;
+  }
+  .tech-left p {
+    font-size: 0.95rem;
+  }
+  .tech-card {
+    padding: 10px 4px;
+    font-size: 0.95rem;
+  }
+  .tech-icon,
+  .tech-card img {
+    max-width: 38px;
+    max-height: 38px;
+    margin-bottom: 8px;
+  }
+  .tech-label {
+    font-size: 0.95rem;
+  }
+}
