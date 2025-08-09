@@ -21,8 +21,8 @@ const Insurance = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='INSURANCE SOLUTIONS'
-        paragraph='Transform your insurance operations with innovative technology solutions and specialized talent'
+        heading='Hospitality'
+        paragraph='Enhancing Hospitality with exceptional talent and tailored solutions to deliver unforgettable guest experiences.'
       />
       <Slider images={sliderImages} />
       <Experience />

@@ -21,8 +21,9 @@ const Energy = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='ENERGY & UTILITIES SOLUTIONS'
-        paragraph='Empower your energy and utilities operations with innovative solutions and specialized talent'
+        heading='Technology Recruitment'
+        paragraph='Connecting top tech talent with cutting-edge opportunities to drive innovation and growth.
+'
       />
       <Slider images={sliderImages} />
       <Experience />

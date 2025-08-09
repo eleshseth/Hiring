@@ -21,8 +21,8 @@ const Government = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='GOVERNMENT SOLUTIONS'
-        paragraph='Modernize public sector operations with our specialized government IT solutions and expert talent'
+        heading='RETAIL'
+        paragraph='Empowering Retail with dynamic talent and innovative solutions to enhance customer experience and drive growth.'
       />
       <Slider images={sliderImages} />
       <Experience />

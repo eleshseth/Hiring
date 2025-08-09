@@ -1,10 +1,10 @@
-import React from 'react';
-import { assets } from '../../assets/assets';
-import Video from '../../components/Video/Video';
-import Slider from '../../components/Slider/Slider';
-import Experience from '../../components/Experience/Experience';
-import Partner from '../../components/Partner/Partner';
-import Engagements from '../../components/Engagements/Engagements';
+import React from "react";
+import { assets } from "../../assets/assets";
+import Video from "../../components/Video/Video";
+import Slider from "../../components/Slider/Slider";
+import Experience from "../../components/Experience/Experience";
+import Partner from "../../components/Partner/Partner";
+import Engagements from "../../components/Engagements/Engagements";
 
 const sliderImages = [
   assets.hp,
@@ -21,10 +21,11 @@ const Automotive = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='AUTOMOTIVE SOLUTIONS'
-        paragraph='Transform your automotive operations with cutting-edge technology solutions and expert talent'
+        heading="Manufacturing & Engineering"
+        paragraph="Driving innovation and precision in Manufacturing & Engineering for a smarter, more efficient future.
+"
       />
-      <Slider images={sliderImages} />
+      {/* <Slider images={sliderImages} /> */}
       <Experience />
       <Partner />
       <Engagements />

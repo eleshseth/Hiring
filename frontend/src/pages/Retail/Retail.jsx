@@ -21,8 +21,9 @@ const Retail = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='RETAIL SOLUTIONS'
-        paragraph='Transform your retail operations with innovative technology solutions and expert talent'
+        heading='Finance Services Recruitment'
+        paragraph='Connecting finance professionals with opportunities that drive growth, compliance, and innovation.
+'
       />
       <Slider images={sliderImages} />
       <Experience />

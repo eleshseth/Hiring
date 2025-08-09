@@ -21,10 +21,11 @@ const Banking = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='BANKING & FINANCIAL SERVICES'
-        paragraph='Transform your banking operations with innovative financial technology solutions and expert talent'
+        heading='Light Industrial'
+        paragraph='TPowering productivity and performance in Light Industrial operations with agility and efficiency.
+'
       />
-      <Slider images={sliderImages} />
+
       <Experience />
       <Partner />
       <Engagements />

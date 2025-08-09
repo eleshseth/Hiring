@@ -21,8 +21,9 @@ const Healthcare = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='HEALTHCARE SOLUTIONS'
-        paragraph='Transform healthcare delivery with our specialized medical technology solutions and expert talent'
+        heading='Telecommunications'
+        paragraph='Connecting Telecommunications with top talent and technology to power global communication and innovation.
+'
       />
       <Slider images={sliderImages} />
       <Experience />

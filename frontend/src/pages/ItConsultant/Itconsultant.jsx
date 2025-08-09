@@ -8,9 +8,9 @@ const Itconsultant = () => {
     <div>
       <Video
         videoSrc={assets.itconsultant}
-        heading='IT Consulting
-Services'
-        paragraph='Transform your IT performance with expert consulting that maximizes efficiency while minimizing costs.'
+        heading='Contract to Hire'
+        paragraph='Bridging short-term needs with long-term talent through seamless contract-to-hire solutions.
+'
       />
       <img src={assets.itco2} />
       <img src={assets.itco1} />

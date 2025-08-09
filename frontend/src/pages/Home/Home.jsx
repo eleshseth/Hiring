@@ -94,14 +94,14 @@ const Home = () => {
       <div className='banner-container'>
         <img src={assets.banner} alt='banner' className='banner-image' />
         <div className='banner-text'>
-          <h1>Empowering IT Excellence</h1>
-          <h2>Connecting Tech Talent with Tomorrow’s Success Stories</h2>
+          <h1>Empowering Excellence</h1>
+          <h2>Connecting Talent with Tomorrow’s Success Stories</h2>
           <button className='banner-button'>Get Started</button>
         </div>
       </div>
       <div className='experience' ref={expRef}>
         <div className='experience-text'>
-          45+ Years of Recruitment Experience
+      Years of Recruitment Experience
         </div>
         <div className='our-details'>
           {stats.map((stat) => (

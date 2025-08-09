@@ -7,7 +7,7 @@ const Footer = () => (
       <div className='footer-brand'>
         <span className='footer-logo'>ALTISLINK</span>
         <p className='footer-tagline'>
-          Empowering IT Excellence. Connecting Tech Talent with Tomorrow’s
+          Empowering Excellence. Connecting Talent with Tomorrow’s
           Success Stories.
         </p>
         <div className='footer-socials'>
@@ -41,9 +41,9 @@ const Footer = () => (
             <li>
               <a href='#'>Careers</a>
             </li>
-            <li>
+            {/* <li>
               <a href='#'>Testimonials</a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div>
@@ -63,7 +63,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <h4>Resources</h4>
           <ul>
             <li>
@@ -79,14 +79,14 @@ const Footer = () => (
               <a href='#'>Help Center</a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div>
           <h4>Contact</h4>
           <ul>
             <li>
               <a href='#'>Get in Touch</a>
             </li>
-            <li>
+            {/* <li>
               <a href='#'>Office Locations</a>
             </li>
             <li>
@@ -94,7 +94,7 @@ const Footer = () => (
             </li>
             <li>
               <a href='#'>Feedback</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

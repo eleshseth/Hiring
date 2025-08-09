@@ -53,7 +53,7 @@ const Experience = () => {
 
   return (
     <div className='experience' ref={expRef}>
-      <div className='experience-text'>45+ Years of Recruitment Experience</div>
+      <div className='experience-text'>Years of Recruitment Experience</div>
       <div className='our-details'>
         {stats.map((stat) => (
           <div key={stat.label}>

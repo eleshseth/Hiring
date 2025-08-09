@@ -20,10 +20,11 @@ const ContactPayrole = () => {
     <div>
       <Video
         videoSrc={assets.contactpayrole}
-        heading='CONTRACTOR PAYROLLING'
-        paragraph='Minimize your classification and co-employment risks with a contractor payroll program thats designed to improve processes and save you money'
+        heading='Payroll Solutions'
+        paragraph='Streamlining workforce management with accurate, compliant, and efficient payroll solutions.
+'
       />
-      <Slider images={sliderImages} />
+   
       <Experience />
       <Partner />
       <Engagements />

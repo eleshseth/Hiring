@@ -98,7 +98,7 @@ const ItTalent = () => {
           muted
         />
         <div className='it-talent-title'>
-          <h1>IT Talent Solutions</h1>
+          <h1>Executive Search</h1>
           <p>
             Connecting Top Tech Professionals
             <br />

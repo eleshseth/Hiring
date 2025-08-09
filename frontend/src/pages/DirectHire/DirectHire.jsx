@@ -32,12 +32,12 @@ const DirectHire = () => {
       <Video
         sty
         videoSrc={assets.directhire}
-        heading='Direct Hire'
+        heading='Permanent Hiring'
         paragraph='Take the stress out of hiring your next team  member with the support of an experienced  recruitment professional.
 "
 '
       />
-      <Slider images={sliderImages} />
+     
       <TalentServices />
       <div className='save'>
         <h1>Save valuable time with the support of an expert.</h1>

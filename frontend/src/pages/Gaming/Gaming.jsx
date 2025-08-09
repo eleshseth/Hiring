@@ -21,8 +21,9 @@ const Gaming = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='GAMING INDUSTRY SOLUTIONS'
-        paragraph='Level up your gaming development with our specialized talent and cutting-edge solutions'
+        heading='Aerospace & Defense'
+        paragraph='Elevating Aerospace & Defense through precision talent and advanced engineering solutions.
+'
       />
       <Slider images={sliderImages} />
       <Experience />

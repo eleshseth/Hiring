@@ -82,7 +82,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('itTalent');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Contract Staffing
+                Executive Search
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -90,7 +90,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('directhire');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Direct Hire
+              Permanent Hiring
                   </div>
 
                   <div
@@ -99,7 +99,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('globaltalent');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Global Talent
+                   Contingent Staffing
                   </div>
 
                   <div
@@ -108,7 +108,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('itconsultant');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    IT Consulting
+      Contract to Hire
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -116,7 +116,15 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('contactpayrole');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Contractor Payrolling
+                  Payroll Solutions
+                  </div>
+                  <div
+                    className='dropdown-subitem'
+                    onClick={() => {
+                      onNavClick && onNavClick('contactpayrole');
+                      setIsMenuOpen(false); // Close the mobile menu
+                    }}>
+                  RPO
                   </div>
                   {/* <div className='dropdown-subitem'>
                     {' '}
@@ -127,7 +135,7 @@ const Navbar = ({ onNavClick }) => {
                 </div>
               )}
             </div>
-            <div
+            {/* <div
               className='dropdown-item'
               onMouseEnter={() => !isMobile && setShowBusinessSpecialties(true)}
               onMouseLeave={() =>
@@ -229,7 +237,7 @@ const Navbar = ({ onNavClick }) => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
             <div
               className='dropdown-item'
               onMouseEnter={() => !isMobile && setShowBusinessIndustries(true)}
@@ -254,7 +262,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('automotive');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Automotive
+                  Manufacturing & Engineering
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -262,7 +270,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('banking');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Banking
+                  Light Industrial
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -270,7 +278,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('energy');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Energy and Utilities
+                    Technology Recruitment
                   </div>{' '}
                   <div
                     className='dropdown-subitem'
@@ -278,7 +286,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('gaming');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Gaming
+                   Aerospace & Defense
                   </div>{' '}
                   <div
                     className='dropdown-subitem'
@@ -286,7 +294,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('government');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Government
+                   Retail
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -294,7 +302,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('healthcare');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Healthcare
+                    Telecommunications
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -302,7 +310,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('insurance');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Insurance
+                   Hospitality
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -310,7 +318,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('lifescience');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Life Science
+                 Pharmaceutical / Life Sciences – Clinical Recruitment
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -318,7 +326,7 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('professional');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Professional service
+                   Public Sector
                   </div>
                   <div
                     className='dropdown-subitem'
@@ -326,9 +334,9 @@ const Navbar = ({ onNavClick }) => {
                       onNavClick && onNavClick('retail');
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
-                    Retail
+                   Finance Services Recruitment
                   </div>
-                  <div
+                  {/* <div
                     className='dropdown-subitem'
                     onClick={() => {
                       onNavClick && onNavClick('semiconductor');
@@ -343,7 +351,7 @@ const Navbar = ({ onNavClick }) => {
                       setIsMenuOpen(false); // Close the mobile menu
                     }}>
                     Telecommunication
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>

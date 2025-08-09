@@ -21,8 +21,9 @@ const Professional = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='PROFESSIONAL SERVICES SOLUTIONS'
-        paragraph='Optimize your professional services with our specialized talent and innovative solutions'
+        heading='Public Sector'
+        paragraph='Supporting the Public Sector with dedicated talent and solutions to drive community impact and operational excellence.
+'
       />
       <Slider images={sliderImages} />
       <Experience />

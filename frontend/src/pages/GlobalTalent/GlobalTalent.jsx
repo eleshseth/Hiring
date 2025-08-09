@@ -28,8 +28,9 @@ const GlobalTalent = () => (
   <div className='global-talent-page'>
     <Video
       videoSrc={assets.global}
-      heading='Global Talent Solutions'
-      paragraph='Expand your reach and access top talent from around the world with our global workforce solutions.'
+      heading='Contingent Staffing'
+      paragraph='Providing flexible contingent staffing solutions to meet evolving business needs with speed and precision.
+'
     />
     <Slider images={sliderImages} />
     <TalentServices />

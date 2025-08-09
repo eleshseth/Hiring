@@ -21,8 +21,9 @@ const LifeScience = () => {
     <div>
       <Video
         videoSrc={assets.video}
-        heading='LIFE SCIENCES SOLUTIONS'
-        paragraph='Accelerate life sciences innovation with our specialized technology solutions and expert talent'
+        heading='Pharmaceutical / Life Sciences – Clinical Recruitment'
+        paragraph='Delivering specialized talent in Pharmaceutical and Life Sciences to drive clinical excellence and innovation.
+'
       />
       <Slider images={sliderImages} />
       <Experience />
