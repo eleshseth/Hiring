@@ -5,16 +5,7 @@ import Slider from '../../components/Slider/Slider';
 import Experience from '../../components/Experience/Experience';
 import Partner from '../../components/Partner/Partner';
 import Engagements from '../../components/Engagements/Engagements';
-
-const sliderImages = [
-  assets.hp,
-  assets.Canadian,
-  assets.Citibank,
-  assets.Desjardins,
-  assets.Coreio,
-  assets.bank,
-  assets.honda,
-];
+import Paragraph from '../../components/Paragraph/paragraph';
 
 const Insurance = () => {
   return (
@@ -24,7 +15,12 @@ const Insurance = () => {
         heading='Hospitality'
         paragraph='Enhancing Hospitality with exceptional talent and tailored solutions to deliver unforgettable guest experiences.'
       />
-      <Slider images={sliderImages} />
+      <Paragraph
+        title={'HOSPITALITY'}
+        description={
+          'In the competitive world of hospitality, delivering exceptional guest experiences is paramount. Altislink is dedicated to connecting hospitality organizations with the talent and solutions they need to thrive.'
+        }
+      />
       <Experience />
       <Partner />
       <Engagements />

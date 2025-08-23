@@ -10,6 +10,7 @@ import Global from '../../components/Global/Global';
 import Industry from '../../components/Industry/Industry';
 import HireForm from '../HireForm/HireForm';
 import AboutUs from '../Aboutus/AboutUs';
+import Paragraph from '../../components/Paragraph/paragraph';
 
 // AnimatedNumber component from Home.jsx
 const AnimatedNumber = ({ target, start }) => {
@@ -39,7 +40,6 @@ const AnimatedNumber = ({ target, start }) => {
 };
 
 const ItTalent = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const expRef = useRef(null);
   const [expInView, setExpInView] = useState(false);
 
@@ -52,33 +52,15 @@ const ItTalent = () => {
   ];
 
   // Images for the slider from assets
-  const sliderImages = [
-    assets.hp,
-    assets.Canadian,
-    assets.Citibank,
-    assets.Desjardins,
-    assets.Coreio,
-    assets.bank,
-    assets.honda,
-  ];
 
   // Auto-advance the slider
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) =>
-        prev === sliderImages.length - 1 ? 0 : prev + 1
-      );
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [sliderImages.length]);
 
   // Handle scroll for experience section animation
   useEffect(() => {
     const handleScroll = () => {
       if (!expRef.current) return;
       const rect = expRef.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
+      if (rect.top < window.innerWidth && rect.bottom > 0) {
         setExpInView(true);
       }
     };
@@ -106,12 +88,18 @@ const ItTalent = () => {
           </p>
         </div>
       </div>
-
+      <Paragraph
+        title={'Executive Search'}
+        description={
+          'We specialize in finding highly skilled resources that bring the best to you and are motivated and productive from the get-go. Our client partner teams come from diverse cross section of skills and different levels of experience. Our network of recruiters and partners are the key to recruiting qualified professionals who help meet the organizational goals of our clients. We are completely focussed and committed in understanding the clients consulting'
+        }
+      />
+      {/* 
       <div className='talent-partners-section'>
         <h2>Our Trusted Partners</h2>
-        <p>We connect top IT talent with industry-leading companies</p>
+        <p>We connect top IT talent with industry-leading companies</p> */}
 
-        <div className='image-slider-container'>
+      {/* <div className='image-slider-container'>
           <div className='image-slider'>
             {sliderImages.map((image, index) => (
               <div
@@ -133,7 +121,7 @@ const ItTalent = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className='our-talent-services'>
         <h1>Our talent services</h1>
@@ -190,14 +178,13 @@ const ItTalent = () => {
           ))}
         </div>
       </div>
-      <Partner/>
-      <Engagements/>
-      <HelpYou/>
-      <Technology/>
-      <Industry/>
-      <Global/>
-      <HireForm/>
-   
+      <Partner />
+      <Engagements />
+      <HelpYou />
+      <Technology />
+      <Industry />
+      <Global />
+      <HireForm />
     </div>
   );
 };

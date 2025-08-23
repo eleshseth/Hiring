@@ -35,6 +35,18 @@
   animation: fadeInLeft 1s ease-out 0.5s forwards;
 }
 
+.video-overlay h1 {
+  color: #1a1a1a;
+}
+
+.video-cta {
+  background-color: #1a1a1a;
+}
+
+.video-cta:hover {
+  background-color: #333333;
+}
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;

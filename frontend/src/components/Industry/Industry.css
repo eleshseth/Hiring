@@ -8,7 +8,7 @@
 .industry-title {
   font-size: 42px;
   font-weight: 700;
-  color: #d6001c;
+  color: #1f6a8a;
   margin-bottom: 10px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .industry-overlay {
-  background-color: rgba(169, 11, 11, 0.54);
+  background-color: #847448;
   width: 100%;
   height: 100%;
   color: white;

@@ -33,27 +33,31 @@ import Retail from './pages/Retail/Retail';
 import Semiconductor from './pages/Semiconductor/Semiconductor';
 import Telecom from './pages/Telecom/Telecom';
 import OfficeLocation from './pages/OfficeLocation/OfficeLocation';
+import Rpo from './pages/Rpo/Rpo';
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('home');
+  const [currentView, setCurrentView] = useState('home');
 
   const handleNavClick = (section) => {
-    setCurrentSection(section);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setCurrentView(section);
   };
 
-  const renderSection = () => {
-    switch (currentSection) {
+  const renderContent = () => {
+    switch (currentView) {
+      case 'home':
+        return <Home onNavClick={handleNavClick} />;
+      case 'itTalent':
+        return <ItTalent />;
+      case 'directhire':
+        return <DirectHire />;
+      case 'rpo':
+        return <Rpo />;
       case 'contact':
         return <ContactForm />;
       case 'jobSearch':
         return <HireForm />;
-      case 'itTalent':
-        return <ItTalent />;
       case 'aboutus':
         return <AboutUs />;
-      case 'directhire':
-        return <DirectHire />;
       case 'globaltalent':
         return <GlobalTalent />;
       case 'itconsultant':
@@ -112,8 +116,8 @@ function App() {
   return (
     <>
       <Navbar onNavClick={handleNavClick} />
-      {renderSection()}
-      <Footer />
+      {renderContent()}
+      <Footer onNavClick={handleNavClick} />
     </>
   );
 }

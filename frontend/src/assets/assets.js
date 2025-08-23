@@ -33,6 +33,7 @@ import itco1 from './itco1.png';
 import itco2 from './itco2.png';
 import itco3 from './itco3.png';
 import contactpayrole from './Contactpayrole.mp4';
+import logo from './logo.jpg';
 
 
 export const assets = {
@@ -70,5 +71,6 @@ export const assets = {
   itco1,
   itco2,
   itco3,
-  contactpayrole
+  contactpayrole,
+  logo
 };

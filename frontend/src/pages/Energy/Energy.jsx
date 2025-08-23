@@ -25,6 +25,12 @@ const Energy = () => {
         paragraph='Connecting top tech talent with cutting-edge opportunities to drive innovation and growth.
 '
       />
+      <Paragraph
+        title={'Technology Recruitment'}
+        description={
+          'Regardless, the industry is constantly driven by innovation and speed-to-market, by demanding users. For success, technology companies must address the challenge of globalization and competition, revenue and margin pressures due to current or would-be investors, and demand accelerated innovation'
+        }
+      />
       <Slider images={sliderImages} />
       <Experience />
       <Partner />

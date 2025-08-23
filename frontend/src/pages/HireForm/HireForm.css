@@ -5,7 +5,7 @@
 }
 
 .hire-form-banner {
-  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  background: linear-gradient(to right, #e6d251, #d0d0cc);;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -21,6 +21,7 @@
 .hire-form-banner p {
   font-size: 1.2rem;
   opacity: 0.9;
+  color:#1f6a8a ;
 }
 
 .hire-form-container {
@@ -29,7 +30,7 @@
   margin: 0 auto 3rem;
   background: #fff;
   border-radius: 1rem;
-  box-shadow: 0 8px 32px rgba(214, 0, 28, 0.13);
+  box-shadow: 0 8px 32px rgba(35, 120, 231, 0.13);
   padding: 2.5rem;
   transition: transform 0.3s ease;
 }
@@ -39,7 +40,7 @@
 }
 
 .hire-form-container h2 {
-  color: #d6001c;
+  color: #1f6a8a;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
@@ -79,7 +80,7 @@
   font-weight: 600;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  background-color: #847448;
   color: #fff;
   cursor: pointer;
   margin-top: 24px;
@@ -88,7 +89,7 @@
 
 .hire-form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(214, 0, 28, 0.2);
+  box-shadow: 0 4px 12px rgba(49, 138, 255, 0.2);
 }
 
 .hire-success {

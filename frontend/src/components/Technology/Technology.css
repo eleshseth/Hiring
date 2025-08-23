@@ -1,7 +1,7 @@
 .technology-section {
   display: flex;
   padding: 80px;
-background: linear-gradient(to right, #d6001c, #d34040);;
+background: linear-gradient(to right, #fbef9c, #d0d0cc);;
   color: white;
   justify-content: space-between;
   align-items: center;
@@ -18,12 +18,14 @@ background: linear-gradient(to right, #d6001c, #d34040);;
   font-weight: bold;
   line-height: 1.2;
   margin-left:  200px;
+  color: #1f6a8a;
 }
 
 .tech-left p {
   margin-top: 15px;
   font-size: 2.1rem;
   margin-left:  200px;
+  color: black;
 }
 
 .tech-grid {
@@ -35,7 +37,7 @@ background: linear-gradient(to right, #d6001c, #d34040);;
 }
 
 .tech-card {
-  background-color: #920000;
+  background-color: #847448;
   border-radius: 10px;
   padding: 30px 25px;
   text-align: center;

@@ -5,16 +5,7 @@ import Slider from '../../components/Slider/Slider';
 import Experience from '../../components/Experience/Experience';
 import Partner from '../../components/Partner/Partner';
 import Engagements from '../../components/Engagements/Engagements';
-
-const sliderImages = [
-  assets.hp,
-  assets.Canadian,
-  assets.Citibank,
-  assets.Desjardins,
-  assets.Coreio,
-  assets.bank,
-  assets.honda,
-];
+import Paragraph from '../../components/Paragraph/paragraph';
 
 const Professional = () => {
   return (
@@ -25,8 +16,12 @@ const Professional = () => {
         paragraph='Supporting the Public Sector with dedicated talent and solutions to drive community impact and operational excellence.
 '
       />
-      <Slider images={sliderImages} />
-      <Experience />
+      <Paragraph
+        title={'PUBLIC SECTOR'}
+        description={
+          'The Public Sector faces unique challenges in attracting and retaining talent. Altislink is committed to supporting government organizations with the specialized skills and expertise they need to drive positive change and improve service delivery.'
+        }
+      />
       <Partner />
       <Engagements />
     </div>

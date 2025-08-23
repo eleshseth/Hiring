@@ -124,7 +124,7 @@
 }
 .banner-button {
   margin-top: 20px;
-  background-color: #d6001c;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -139,8 +139,8 @@
   margin-top: -10px;
   width: 100%;
   min-height: 50vh;
-  background-color: #d6001c;
-  background: linear-gradient(to right, #d6001c, #d34040);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,8 +176,8 @@
     padding: 12px 4px;
     margin-bottom: 0;
     margin-top: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    background: rgba(255,255,255,0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    background: rgba(255, 255, 255, 0.1);
     min-height: 70px;
     border-radius: 8px;
     height: auto;
@@ -190,7 +190,6 @@
     font-size: 0.85rem;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .experience {
@@ -243,7 +242,6 @@
   .our-details {
     flex-direction: column;
     gap: 15px;
-  
   }
 }
 
@@ -296,7 +294,7 @@
   font-family: sans-serif;
   letter-spacing: 4px;
   text-align: center;
-  color: #333333;
+  color: #1f6a8a;
   font-size: 25px;
   font-weight: 100;
   padding-bottom: 25px;
@@ -412,7 +410,7 @@
 .solution-card-icon {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #d6001c;
+  color: #000000;
   flex-shrink: 0;
 }
 
@@ -426,7 +424,7 @@
 
 .solution-card-description {
   font-size: 1.1rem;
-  color: #4b5563;
+  color: #1f6a8a;
   line-height: 1.7;
   flex-grow: 1;
 }
@@ -559,7 +557,7 @@
 .tech {
   width: 100%;
   min-height: 400px;
-  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -679,13 +677,13 @@
 
 .specific {
   padding: 4rem 2rem;
-  background-color: #f8f9fa;
+  background-color: #1f6a8a;
   text-align: center;
 }
 
 .specific h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #fbef9c;
   margin-bottom: 3rem;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -709,8 +707,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 6px solid rgba(245, 193, 5, 0.1);
+  box-shadow: 0 4px 6px rgba(224, 204, 26, 0.1);
 }
 
 .specific-image:hover {
@@ -973,7 +971,7 @@
 }
 
 .video-cta {
-  background-color: #d6001c;
+  background-color: #000000;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -984,7 +982,7 @@
 }
 
 .video-cta:hover {
-  background-color: #ff1a1a;
+  background-color: #1a1a1a;
   transform: translateY(-2px);
 }
 
@@ -999,7 +997,7 @@
 .help h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #d6001c;
+  color: #000000;
   margin: 0 auto;
   max-width: 800px;
   line-height: 1.2;
@@ -1061,23 +1059,28 @@
   padding: 2rem;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 215, 16, 0.4);
 }
-
+.help h1{
+  color: #1f6a8a;
+}
+.dropdown-content p{
+  color: #1f6a8a;
+}
 .dropdown-box {
   border-radius: 8px;
-  border: 1px solid rgba(214, 0, 28, 0.2);
+  border: 1px solid rgba(246, 206, 4, 0.2);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .dropdown-box:hover {
-  background: rgba(214, 0, 28, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   transform: translateX(10px);
 }
 
 .dropdown-box h3 {
-  color: #d6001c;
+  color: #000000;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -1172,7 +1175,7 @@
 }
 .savings {
   width: 100%;
-  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   padding: 4rem 1rem;
   min-height: auto;
   display: flex;
@@ -1231,7 +1234,7 @@
 .saving-button {
   padding: 1rem 2rem;
   font-size: 1.1rem;
-  color: #d6001c;
+  color: #000000;
   background: white;
   border: none;
   border-radius: 50px;
@@ -1276,8 +1279,8 @@
   height: 100%;
   background: linear-gradient(
     45deg,
-    rgba(214, 0, 28, 0.2) 0%,
-    rgba(255, 77, 77, 0.2) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(26, 26, 26, 0.3) 100%
   );
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -1329,7 +1332,7 @@
 .insights-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #d6001c;
+  color: #000000;
   margin-bottom: 3rem;
   line-height: 1.2;
   font-family: 'Inter', sans-serif;
@@ -1398,7 +1401,7 @@
 }
 
 .insight-btn {
-  background: #d6001c;
+  background: #000000;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -1410,7 +1413,7 @@
 }
 
 .insight-btn:hover {
-  background: #a80016;
+  background: #1a1a1a;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1434,4 +1437,23 @@
   .insight-card {
     max-width: 95vw;
   }
+}
+.tech-specializations h1,
+.tech-heading h1,
+.tech-button,
+.tech-content h1 {
+  color: #fff297;
+}
+
+/* Add specific styling for "Transform Your IT Workforce" text */
+.tech-heading h1,
+.video-content h2,
+.savings h2,
+.saving-content h2,.video-cta:hover {
+  color: #fff297;
+}
+.video-cta {
+  background-color: #fff297;
+  color: #000000;
+
 }

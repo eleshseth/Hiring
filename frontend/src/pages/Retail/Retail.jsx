@@ -5,16 +5,7 @@ import Slider from '../../components/Slider/Slider';
 import Experience from '../../components/Experience/Experience';
 import Partner from '../../components/Partner/Partner';
 import Engagements from '../../components/Engagements/Engagements';
-
-const sliderImages = [
-  assets.hp,
-  assets.Canadian,
-  assets.Citibank,
-  assets.Desjardins,
-  assets.Coreio,
-  assets.bank,
-  assets.honda,
-];
+import Paragraph from '../../components/Paragraph/paragraph';
 
 const Retail = () => {
   return (
@@ -25,7 +16,12 @@ const Retail = () => {
         paragraph='Connecting finance professionals with opportunities that drive growth, compliance, and innovation.
 '
       />
-      <Slider images={sliderImages} />
+      <Paragraph
+        title={'FINANCE SERVICES'}
+        description={
+          'In the dynamic world of finance, organizations must navigate complex regulations and ever-changing market conditions. Altislink is dedicated to connecting finance professionals with the opportunities they need to thrive in this competitive landscape.'
+        }
+      />
       <Experience />
       <Partner />
       <Engagements />

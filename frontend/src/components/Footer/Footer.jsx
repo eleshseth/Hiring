@@ -1,14 +1,20 @@
 import React from 'react';
 import './Footer.css';
+import { assets } from '../../assets/assets';
 
-const Footer = () => (
+const Footer = ({ onNavClick }) => (
   <footer className='footer'>
     <div className='footer-main'>
       <div className='footer-brand'>
-        <span className='footer-logo'>ALTISLINK</span>
+        <img
+          src={assets.logo}
+          style={{ width: '300px' }}
+          alt='ALTISLINK Logo'
+          className='footer-logo'
+        />
         <p className='footer-tagline'>
-          Empowering Excellence. Connecting Talent with Tomorrow’s
-          Success Stories.
+          Empowering Excellence. Connecting Talent with Tomorrow’s Success
+          Stories.
         </p>
         <div className='footer-socials'>
           <a href='#' aria-label='LinkedIn' className='footer-social'>
@@ -33,14 +39,16 @@ const Footer = () => (
           <h4>Company</h4>
           <ul>
             <li>
-              <a href='#'>About</a>
+              <a href='#' onClick={() => onNavClick && onNavClick('aboutus')}>
+                About
+              </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#'>Leadership</a>
             </li>
             <li>
               <a href='#'>Careers</a>
-            </li>
+            </li> */}
             {/* <li>
               <a href='#'>Testimonials</a>
             </li> */}
@@ -50,16 +58,47 @@ const Footer = () => (
           <h4>Services</h4>
           <ul>
             <li>
-              <a href='#'>Staffing Solutions</a>
+              <a href='#' onClick={() => onNavClick && onNavClick('itTalent')}>
+                Executive Search
+              </a>
             </li>
             <li>
-              <a href='#'>Talent Acquisition</a>
+              <a
+                href='#'
+                onClick={() => onNavClick && onNavClick('directhire')}>
+                Permanent Hiring
+              </a>
             </li>
             <li>
-              <a href='#'>Workforce Management</a>
+              <a
+                href='#'
+                onClick={() => onNavClick && onNavClick('globaltalent')}>
+                Contingent Staffing
+              </a>
             </li>
             <li>
-              <a href='#'>Consulting</a>
+              <a
+                href='#'
+                onClick={() => onNavClick && onNavClick('itconsultant')}>
+                Contract to Hire
+              </a>
+            </li>
+            <li>
+              <a
+                href='#'
+                onClick={() => onNavClick && onNavClick('contactpayrole')}>
+                Payroll Solutions
+              </a>
+            </li>
+            <li>
+              <a href='#' onClick={() => onNavClick && onNavClick('rpo')}>
+                RPO
+              </a>
+            </li>
+            <li>
+              <a href='#' onClick={() => onNavClick && onNavClick('jobSearch')}>
+                For jobseekers
+              </a>
             </li>
           </ul>
         </div>
@@ -84,7 +123,9 @@ const Footer = () => (
           <h4>Contact</h4>
           <ul>
             <li>
-              <a href='#'>Get in Touch</a>
+              <a href='#' onClick={() => onNavClick && onNavClick('contact')}>
+                Get in Touch
+              </a>
             </li>
             {/* <li>
               <a href='#'>Office Locations</a>
@@ -110,7 +151,10 @@ const Footer = () => (
       </div>
     </div>
     <div className='footer-bottom'>
-      <span>© {new Date().getFullYear()} ALTISLINK. All rights reserved.</span>
+      <span>
+        © {new Date().getFullYear()}© 2025 Altislink. All rights reserved
+        @Powered by MarketMinds Digital Solutions
+      </span>
       <span>
         <a href='#'>Privacy Policy</a> | <a href='#'>Terms of Service</a>
       </span>

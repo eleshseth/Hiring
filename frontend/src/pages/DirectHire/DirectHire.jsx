@@ -14,16 +14,17 @@ import Industry from '../../components/Industry/Industry';
 import Global from '../../components/Global/Global';
 import HireForm from '../HireForm/HireForm';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import Paragraph from '../../components/Paragraph/paragraph';
 
-const sliderImages = [
-  assets.hp,
-  assets.Canadian,
-  assets.Citibank,
-  assets.Desjardins,
-  assets.Coreio,
-  assets.bank,
-  assets.honda,
-];
+// const sliderImages = [
+//   assets.hp,
+//   assets.Canadian,
+//   assets.Citibank,
+//   assets.Desjardins,
+//   assets.Coreio,
+//   assets.bank,
+//   assets.honda,
+// ];
 
 const DirectHire = () => {
   return (
@@ -33,11 +34,16 @@ const DirectHire = () => {
         sty
         videoSrc={assets.directhire}
         heading='Permanent Hiring'
-        paragraph='Take the stress out of hiring your next team  member with the support of an experienced  recruitment professional.
+        paragraph='Take the stress out of hiring your next team member with the support of an experienced recruitment professional.
 "
 '
       />
-     
+      <Paragraph
+        title={'Permanent Hiring'}
+        description={
+          'We help our clients to make their recruitment and onboarding processes effective and this is the reason we are currently partner of choice with several Software, Telecom, Research and Analytics, Information Technology, Banking & Finance, Travel, Fashion, Pharma, Medical, Hospitality and Consulting majors in various domains. Our innovative incentive-based peer networking has helped us tie up with a variety of senior, mid-level and Junior executives from the corporate world, who work as an extended arm of our family.'
+        }
+      />
       <TalentServices />
       <div className='save'>
         <h1>Save valuable time with the support of an expert.</h1>

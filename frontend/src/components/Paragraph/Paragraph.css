@@ -1,0 +1,58 @@
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 400px;
+}
+
+.work div {
+  text-align: center;
+  max-width: 800px;
+}
+
+.work h2 {
+  font-size: 2.5rem;
+  color: 146286;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.work p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .work {
+    padding: 3rem 1rem;
+    min-height: 300px;
+  }
+
+  .work h2 {
+    font-size: 2rem;
+  }
+
+  .work p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work {
+    padding: 2rem 0.5rem;
+    min-height: 250px;
+  }
+
+  .work h2 {
+    font-size: 1.8rem;
+  }
+
+  .work p {
+    font-size: 0.9rem;
+  }
+}

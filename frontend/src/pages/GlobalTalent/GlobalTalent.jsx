@@ -12,18 +12,19 @@ import Technology from '../../components/Technology/Technology';
 import Industry from '../../components/Industry/Industry';
 import Global from '../../components/Global/Global';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import Paragraph from '../../components/Paragraph/paragraph';
 
 
 
-const sliderImages = [
-  assets.hp,
-  assets.Canadian,
-  assets.Citibank,
-  assets.Desjardins,
-  assets.Coreio,
-  assets.bank,
-  assets.honda,
-];
+// const sliderImages = [
+//   assets.hp,
+//   assets.Canadian,
+//   assets.Citibank,
+//   assets.Desjardins,
+//   assets.Coreio,
+//   assets.bank,
+//   assets.honda,
+// ];
 const GlobalTalent = () => (
   <div className='global-talent-page'>
     <Video
@@ -32,7 +33,12 @@ const GlobalTalent = () => (
       paragraph='Providing flexible contingent staffing solutions to meet evolving business needs with speed and precision.
 '
     />
-    <Slider images={sliderImages} />
+    <Paragraph
+      title={'Contingent Staffing'}
+      description={
+        'We have extensive knowledge in providing the complete range of technical skills and job roles at all levels. We understand that contract staff is a valuable resource to all our clients and therefore we have experienced and professional consultants with industry knowhow and expertise in our team, who are able to ensure best suitable candidates with high calibre, are approached'
+      }
+    />
     <TalentServices />
     <div className='niche'>
       <h1>Niche Talent that fits your budget</h1>
@@ -55,8 +61,7 @@ const GlobalTalent = () => (
     <Technology />
     <Industry />
     <Global />
-    <ContactForm/>
-
+    <ContactForm />
   </div>
 );
 

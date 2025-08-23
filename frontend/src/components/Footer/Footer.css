@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #d6001c 0%, #ff4d4d 100%);
+  background: linear-gradient(to right, #000000, #262626);
   color: #fff;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -25,7 +25,7 @@
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #fff;
+  color: #1a1a1a;
   margin-bottom: 1rem;
   display: inline-block;
 }
@@ -58,7 +58,7 @@
 
 .footer-social:hover {
   background: #fff;
-  color: #d6001c;
+  color:#fbef9c;
 }
 
 .footer-links {
@@ -131,7 +131,7 @@
   border-radius: 50px;
   border: none;
   background: #fff;
-  color: #d6001c;
+  color: #ffe120;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
@@ -139,8 +139,8 @@
 }
 
 .footer-newsletter button:hover {
-  background: #d6001c;
-  color: #fff;
+  background: #fbef9c;
+  color: #000000;
   border: 1px solid #fff;
 }
 

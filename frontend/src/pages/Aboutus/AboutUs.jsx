@@ -1,34 +1,9 @@
 import React from "react";
 import "./AboutUs.css";
-import { assets } from "../../assets/assets";
+
 import Video from "../../components/Video/Video";
 
-const aboutCards = [
-  {
-    image: assets.team,
-    category: "Our Team",
-    title: "Meet Our Experts",
-    description:
-      "Our experienced team is dedicated to delivering the best workforce solutions for your business.",
-    link: "#",
-  },
-  {
-    image: assets.professional,
-    category: "Culture",
-    title: "Driven by Values",
-    description:
-      "We foster a culture of integrity, respect, and excellence in everything we do.",
-    link: "#",
-  },
-  {
-    image: assets.officeboy,
-    category: "Impact",
-    title: "Making a Difference",
-    description:
-      "We help organizations and professionals achieve their goals and grow together.",
-    link: "#",
-  },
-];
+
 
 const AboutUs = () => {
   return (

@@ -84,9 +84,7 @@ const HireForm = () => {
             onChange={handleChange}
             required
           />
-          <button
-            type='submit'
-            style={{ background: '#0057b8', color: '#fff', marginTop: 12 }}>
+          <button type='submit' style={{ color: '#fff', marginTop: 12 }}>
             Submit
           </button>
           {submitted && (
@@ -103,13 +101,14 @@ const HireForm = () => {
         <Link to='/jobs'>
           <button
             style={{
-              background: '#0057b8',
+              background: '#847448',
               color: '#fff',
               padding: '12px 32px',
               borderRadius: 4,
               border: 'none',
               fontSize: 16,
               cursor: 'pointer',
+              marginBottom: 24,
             }}>
             Search Jobs
           </button>
