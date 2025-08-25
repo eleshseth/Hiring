@@ -4,7 +4,7 @@
   align-items: center;
   padding: 4rem 2rem;
   background-color: #f8f9fa;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .work div {
@@ -55,4 +55,13 @@
   .work p {
     font-size: 0.9rem;
   }
+}
+.bullet-points {
+  list-style-type: disc;   /* normal round bullets */
+  padding-left: 20px;      /* indentation */
+}
+
+.bullet-points li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }

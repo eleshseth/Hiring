@@ -6,7 +6,16 @@ const Paragraph = ({ title, description }) => {
     <div className='work'>
       <div>
         <h2>{title}</h2>
-        <p>{description}</p>
+
+        {Array.isArray(description) ? (
+          <ul className="bullet-points">
+            {description.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{description}</p>
+        )}
       </div>
     </div>
   );

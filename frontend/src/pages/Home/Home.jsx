@@ -115,7 +115,7 @@ const Home = () => {
         </div>
       </div>
       <div className='solutions'>
-        <h1>Tailored IT Staffing Solutions</h1>
+        <h1>Tailored Staffing Solutions</h1>
         <h4>Expert services that align with your unique needs</h4>
         <div className='solutions-grid'>
           {cards.map((card, index) => (
@@ -130,7 +130,7 @@ const Home = () => {
       <div className='tech'>
         <div className='tech-heading'>
           <h1>Technology Specializations</h1>
-          <p>Staffing experts in vital IT domains</p>
+          <p>Staffing experts in vital  domains</p>
         </div>
         <div className='tech-buttons'>
           <button className='tech-button'>Salesforce</button>
@@ -192,11 +192,11 @@ const Home = () => {
         <div className='video-content'>
           <h2>Transform Your IT Workforce</h2>
           <p>Partner with us for innovative staffing solutions</p>
-          <button className='video-cta'>Learn More</button>
+          {/* <button className='video-cta'>Learn More</button> */}
         </div>
       </div>
       <div className='help'>
-        <h1>How we can help you find IT talent</h1>
+        <h1>How we can help you find talent</h1>
         <div className='help-grid'>
           <div>
             <img className='help-image' src={assets.work} />
@@ -205,7 +205,7 @@ const Home = () => {
             <div className='dropdown-box'>
               <h3>Contract Staffing</h3>
               <div className='dropdown-content'>
-                <p>Access top IT talent for your project needs</p>
+                <p>Access top talent for your project needs</p>
               </div>
             </div>
             <div className='dropdown-box'>
