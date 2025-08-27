@@ -1,47 +1,17 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
-import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
-  // const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  // const handleChange = (e) => {
-  //   setForm({ ...form, [e.target.name]: e.target.value });
-  // };
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const serviceId = 'service_mi55pbm';
-    const templateId = 'template_bri12vr';
-    const publicKey = 'TTp1nFNRyaDmeCUFt';
-
-    const templateParams = {
-      from_name: name,
-      to_name: 'Altislink',
-      message: message,
-      reply_to: email,
-    };
-
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setName('');
-        setEmail('');
-        setMessage('');
-        setSubmitted(true);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
-      });
-
-    // e.preventDefault();
-    // setSubmitted(true);
+    setSubmitted(true);
     // Here you would typically send the form data to your backend
   };
 
@@ -57,30 +27,30 @@ const ContactForm = () => {
           type='text'
           name='name'
           placeholder='Your Name'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={form.name}
+          onChange={handleChange}
           required
         />
         <input
           type='email'
           name='email'
           placeholder='Your Email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={form.email}
+          onChange={handleChange}
           required
         />
         <textarea
           name='message'
           placeholder='Your Message'
           rows={5}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={form.message}
+          onChange={handleChange}
           required
         />
         <button type='submit'>Send Message</button>
-        {/* {submitted && (
+        {submitted && (
           <div className='contact-success'>Thank you for contacting us!</div>
-        )} */}
+        )}
       </form>
     </div>
   );

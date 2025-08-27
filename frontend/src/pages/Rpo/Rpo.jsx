@@ -11,6 +11,7 @@ import Industry from '../../components/Industry/Industry';
 import HireForm from '../HireForm/HireForm';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import Paragraph from '../../components/Paragraph/paragraph';
+import Service from '../../components/Service/Service';
 
 // AnimatedNumber component
 const AnimatedNumber = ({ target, start }) => {
@@ -86,9 +87,14 @@ const Rpo = () => {
       </div>
       <Paragraph
         title={'RPO Solutions'}
-        description={
-          'Altislink offers highly-customized recruiting solutions to clients with lot of flexibility in engagement. Every organization needs to attract, retain and manage the best talent to maintain their competitive edge. For most companies, it’s not where their core competencies lie. AdientOne helps clients boost their growth by attracting best talent – both locally and globally – at a fraction of the hassle, time and cost.'
-        }
+        description={[
+          'AltisLink offers highly-customized recruiting solutions with maximum flexibility in engagement. We understand that every organization needs to attract, retain, and manage the best talent to maintain a competitive edge. However, for many companies, recruitment is not a core competency. AltisLink helps clients accelerate growth by attracting top talent—both locally and globally—while minimizing hassle, time, and cost.',
+          'Through our Recruitment Process Outsourcing (RPO) model, AltisLink enables clients to outsource all or part of their permanent recruitment services. This approach drives significant benefits in terms of cost reduction, efficiency, service quality, and scalability.',
+          'Our RPO service offerings include:',
+          'Offshore Global RPO: Our offshore recruiting teams leverage end-to-end expertise, multiple sourcing channels, the latest technologies, big data trends, and strong ties with local hiring communities to deliver high-quality results from day one.',
+          'End-to-End Enterprise RPO: With this model, clients can fully offload their hiring processes. We align closely with business goals, providing an agile, targeted, sustainable, impactful, and scalable talent delivery model that integrates seamlessly within the organization.',
+          
+        ]}
       />
 
       <div className='our-talent-services'>
@@ -147,7 +153,7 @@ const Rpo = () => {
           ))}
         </div>
       </div>
-
+<Service/>
       <Partner />
       <Engagements />
       <HelpYou />

@@ -446,11 +446,21 @@ const Navbar = ({ onNavClick }) => {
               className='dropdown-item'
               onClick={() => {
                 onNavClick && onNavClick('aboutus');
-                setIsMenuOpen(false); // Close the mobile menu
+                setIsMenuOpen(false);
               }}
               style={{ cursor: 'pointer' }}>
               Who we are
             </div>
+          </div>
+        </div>
+        <div className='nav-item'>
+          <div
+            className='nav-title'
+            onClick={() => {
+              onNavClick && onNavClick('career');
+              setIsMenuOpen(false);
+            }}>
+            CAREER
           </div>
         </div>
         <div className='nav-item'>

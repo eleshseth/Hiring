@@ -6,6 +6,7 @@ import Experience from '../../components/Experience/Experience';
 import Partner from '../../components/Partner/Partner';
 import Engagements from '../../components/Engagements/Engagements';
 import Paragraph from '../../components/Paragraph/paragraph';
+import Service from '../../components/Service/Service';
 
 const Insurance = () => {
   return (
@@ -22,6 +23,7 @@ const Insurance = () => {
         }
       />
       <Experience />
+      <Service/>
       <Partner />
       <Engagements />
     </div>

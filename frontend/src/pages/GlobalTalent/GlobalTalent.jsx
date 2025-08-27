@@ -13,6 +13,7 @@ import Industry from '../../components/Industry/Industry';
 import Global from '../../components/Global/Global';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import Paragraph from '../../components/Paragraph/paragraph';
+import Service from '../../components/Service/Service';
 
 
 
@@ -81,6 +82,7 @@ const GlobalTalent = () => (
       </p>
     </div>
     <Experience />
+    <Service/>
     <Partner />
     <Engagements />
     <HelpYou />

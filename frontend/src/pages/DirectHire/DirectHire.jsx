@@ -15,6 +15,7 @@ import Global from '../../components/Global/Global';
 import HireForm from '../HireForm/HireForm';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import Paragraph from '../../components/Paragraph/paragraph';
+import Service from '../../components/Service/Service';
 
 // const sliderImages = [
 //   assets.hp,
@@ -79,6 +80,7 @@ const DirectHire = () => {
         </div>
       </div>
       <Experience />
+      <Service />
       <Partner />
       <Engagements />
       <HelpYou />

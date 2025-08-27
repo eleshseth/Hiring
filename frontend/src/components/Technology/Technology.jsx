@@ -21,7 +21,7 @@ const Technology = () => {
           <br />
           Specializations
         </h2>
-        <p>Staffing experts in vital IT domains.</p>
+        <p>Staffing experts in vital  domains.</p>
       </div>
       <div className='tech-grid'>
         {techItems.map((item, index) => (

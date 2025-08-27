@@ -146,7 +146,7 @@ const Footer = ({ onNavClick }) => (
           <button type='submit'>Subscribe</button>
         </form>
         <p className='footer-newsletter-text'>
-          Stay updated with the latest IT hiring trends and insights.
+          Stay updated with the latest hiring trends and insights.
         </p>
       </div>
     </div>

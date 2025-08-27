@@ -34,6 +34,7 @@ import Semiconductor from './pages/Semiconductor/Semiconductor';
 import Telecom from './pages/Telecom/Telecom';
 import OfficeLocation from './pages/OfficeLocation/OfficeLocation';
 import Rpo from './pages/Rpo/Rpo';
+import Career from './pages/Career/Career';
 
 function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -108,6 +109,8 @@ function App() {
         return <Telecom />;
       case 'officelocation':
         return <OfficeLocation />;
+      case 'career':
+        return <Career />;
       default:
         return <Home />;
     }

@@ -34,7 +34,7 @@ import itco2 from './itco2.png';
 import itco3 from './itco3.png';
 import contactpayrole from './Contactpayrole.mp4';
 import logo from './logo.jpg';
-
+import service from './service.jpg';
 
 export const assets = {
   automitive,
@@ -72,5 +72,6 @@ export const assets = {
   itco2,
   itco3,
   contactpayrole,
-  logo
+  logo,
+  service
 };

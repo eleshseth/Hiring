@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { assets } from '../../assets/assets';
 import './Home.css';
 import { ServicesSection } from '../ServiceSection/ServiceSection';
+import Service from '../../components/Service/Service';
 
 const stats = [
   { value: 38000, label: 'Jobs Worked Annually' },
@@ -36,7 +37,7 @@ const AnimatedNumber = ({ target, start }) => {
   return <span>{count.toLocaleString()}</span>;
 };
 
-const Home = () => {
+const Home = ({ onNavClick }) => {
   const cards = [
     {
       icon: '📈',
@@ -89,20 +90,27 @@ const Home = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToNext = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <div>
+    <div className='home'>
       <div className='banner-container'>
         <img src={assets.banner} alt='banner' className='banner-image' />
         <div className='banner-text'>
-          <h1>Empowering Excellence</h1>
-          <h2>Connecting Talent with Tomorrow’s Success Stories</h2>
-          <button className='banner-button'>Get Started</button>
+          <h1>Find Your Next Opportunity</h1>
+          <h2>Connect with top employers and advance your career</h2>
+          <button className='banner-button' onClick={scrollToNext}>
+            Get Started
+          </button>
         </div>
       </div>
       <div className='experience' ref={expRef}>
-        <div className='experience-text'>
-      Years of Recruitment Experience
-        </div>
+        <div className='experience-text'>Years of Recruitment Experience</div>
         <div className='our-details'>
           {stats.map((stat) => (
             <div key={stat.label}>
@@ -130,7 +138,7 @@ const Home = () => {
       <div className='tech'>
         <div className='tech-heading'>
           <h1>Technology Specializations</h1>
-          <p>Staffing experts in vital  domains</p>
+          <p>Staffing experts in vital domains</p>
         </div>
         <div className='tech-buttons'>
           <button className='tech-button'>Salesforce</button>
@@ -184,13 +192,14 @@ const Home = () => {
             style={{ backgroundImage: `url(${assets.automitive})` }}></div>
         </div>
       </div>
+      <Service />
       <div className='video-section'>
         <video className='background-video' autoPlay loop muted>
           <source src={assets.video} type='video/mp4' />
           Your browser does not support the video tag.
         </video>
         <div className='video-content'>
-          <h2>Transform Your IT Workforce</h2>
+          <h2>Transform Your Workforce</h2>
           <p>Partner with us for innovative staffing solutions</p>
           {/* <button className='video-cta'>Learn More</button> */}
         </div>
@@ -269,7 +278,7 @@ const Home = () => {
             <h3 className='insight-title'>2024 Talent Trends</h3>
             <p className='insight-desc'>
               Discover the latest trends shaping talent acquisition and
-              workforce management in the IT sector.
+              workforce management.
             </p>
             <button className='insight-btn'>Read More</button>
           </div>

@@ -46,7 +46,7 @@
 
 .banner-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(214, 0, 28, 0.3);
+  box-shadow: 0 4px 15px rgba(222, 184, 61, 0.3);
 }
 
 .experience-text {

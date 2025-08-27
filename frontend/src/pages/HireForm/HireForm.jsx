@@ -26,7 +26,7 @@ const HireForm = () => {
   return (
     <div className='hire-form-page'>
       <div className='hire-form-banner'>
-        <h1>Find Your Next IT Talent</h1>
+        <h1>Find Your Next  Talent</h1>
         <p>Connect with top tech professionals and build your dream team</p>
       </div>
       <div className='hire-form-container'>

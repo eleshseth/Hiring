@@ -7,9 +7,9 @@ const TalentServices = () => (
     <h1>Our talent services</h1>
     <p>
       The acceleration of automation, globalisation and changing workforce
-      demographics are increasing the demand for IT skills that bring together
+      demographics are increasing the demand for skills that bring together
       technology, people and industry knowledge. We'll quickly help you access
-      IT talent through the following services:
+       talent through the following services:
     </p>
     <div className='images'>
       <div className='service-item'>

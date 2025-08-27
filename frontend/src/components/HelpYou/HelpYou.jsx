@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets';
 const HelpYou = () => {
   return (
     <div className='help-container'>
-      <h2 className='help-title'>How we can help you find IT talent</h2>
+      <h2 className='help-title'>How we can help you find  talent</h2>
       <div className='help-content'>
         <div className='help-image-wrapper'>
           <img

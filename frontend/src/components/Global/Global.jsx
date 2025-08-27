@@ -18,7 +18,7 @@ const Global = ({
       </video>
       <div className='global-content'>
         <h2>{heading || 'Locations across North America'}</h2>
-        <p>{subheading || 'We have people where you need them.s'}</p>
+        <p>{subheading || 'We have people where you need them'}</p>
         {buttonText && (
           <button className='global-cta' onClick={onButtonClick}>
             {buttonText}

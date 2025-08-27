@@ -1,6 +1,6 @@
 import './ServiceCard.css';
 
-const ServiceCard = ({ icon: Icon, title, description }) => {
+const ServiceCard = ({ icon:  title, description }) => {
   return (
     <div className="service-card">
       <div className="service-card-header">

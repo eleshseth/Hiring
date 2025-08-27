@@ -9,17 +9,20 @@ background: linear-gradient(to right, #f2da3f, #f1f19b);;
 }
 .procom h1 {
   font-size: 2rem;
-  color: #1f6a8a;
-  margin: auto;
+  color: #005275;
+margin-top: 50px;
+
   text-align: center;
   font-family: sans-serif;
 }
 .procom p {
+  
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #000000;
   margin: auto;
   text-align: center;
-  font-family: sans-serif;
+  margin-bottom: 80px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .work {
   display: flex;
